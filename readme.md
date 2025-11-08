@@ -23,35 +23,6 @@ A learning tool that helps beginners practice without requiring constant teacher
 Potential extension into a mobile or web app for broader accessibility.
 
 
-StrumSense/
-│
-├── requirements.txt
-├── README.md
-│
-├── pose_tracking/               # Hand pose (chord detection) system
-│   ├── collect_data.py
-│   ├── train_model.py
-│   ├── real_time_predict.py
-│   ├── hand_chord_model.pkl     # trained pose model
-│   ├── label_encoder.pkl        # encoder for chord labels
-│   └── reports/
-│       └── pose_confusion_matrix.png
-│
-├── audio_tracking/              # Audio-based chord detection (to be built Step-2)
-│   ├── collect_audio.py
-│   ├── train_audio_model.py
-│   ├── real_time_audio.py
-│   ├── audio_chord_model.pkl    # trained audio model
-│   └── reports/
-│       └── audio_confusion_matrix.png
-│
-├── fusion/                      # Step-3: combining audio + vision
-│   ├── fuse_models.py
-│   ├── real_time_fusion.py
-│   └── reports/
-│       └── fusion_results.png
-│
-└── utils/                       # Shared helpers
     ├── feature_utils.py         # landmark normalization, spectrogram extraction, etc.
     ├── dataset_utils.py
     └── config.py                # global paths, chord list
