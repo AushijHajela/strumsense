@@ -1,0 +1,10 @@
+streamlit
+opencv-python
+mediapipe
+numpy
+pillow
+sounddevice
+soundfile
+librosa
+scikit-learn
+joblib
